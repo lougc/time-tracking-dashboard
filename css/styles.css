@@ -1,0 +1,187 @@
+/** GLOBAL **/
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background: hsl(226, 43%, 10%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+small {
+    color: rgba(211, 211, 211, 0.687);
+}
+
+.content {
+    min-width: 375px;
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2;
+    gap: 1rem;
+}
+
+/** GLOBAL CARDS **/
+
+.card {
+    background: hsl(235, 46%, 20%);
+    color: #fff;
+    border-radius: 15px;
+}
+
+.header-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-card a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card__info__time {
+    font-size: 3rem;
+    font-weight: 200;
+    margin: 0;
+}
+
+.card__info {
+    padding: 0 2rem 2rem 2rem;
+    border-radius: 15px;
+    background: hsl(235, 46%, 20%);
+    margin-top: -25px;
+    transition: .3s ease-in;
+    cursor: pointer;
+}
+
+.card__info:hover {
+    background: rgb(52,57,123);
+}
+
+/** CARDS BACKGROUNDS **/
+
+.card__icon {
+    border-radius: 15px;
+    height: 60px;
+}
+
+.bg__work {
+    background: hsl(15, 100%, 70%) url(../images/icon-work.svg) no-repeat right;
+}
+
+.bg__play {
+    background: hsl(195, 74%, 62%) url(../images/icon-play.svg) no-repeat right;
+}
+
+.bg__study {
+    background: hsl(348, 100%, 68%) url(../images/icon-study.svg) no-repeat right;
+}
+
+.bg__exercise {
+    background: hsl(145, 58%, 55%) url(../images/icon-exercise.svg) no-repeat right;
+}
+
+.bg__social {
+    background: hsl(264, 64%, 52%) url(../images/icon-social.svg) no-repeat right;
+}
+
+.bg__self {
+    background: hsl(43, 84%, 65%) url(../images/icon-self-care.svg) no-repeat right;
+}   
+
+/** CARD AUTHOR **/
+
+.author {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-row: span 2;
+}
+
+.card__author__image img{
+    width: 50%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.card__author {
+    background: rgb(87,70,234);
+    padding: 1rem;
+    flex-basis: 70%;
+    border-radius: 15px;
+}
+
+.card__author__info p {
+    color: lightgrey;
+}
+
+.card__author__info h2 {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+/** CARD AUTHOR NAVIGATION **/
+
+.card__author__nav {
+    flex-basis: 30%;
+    padding: 1rem;
+    background: hsl(235, 46%, 20%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.card__nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__nav__link {
+    text-decoration: none;
+    color: hsl(235, 45%, 61%);
+    padding: .5rem .5rem;
+}
+
+.active {
+    color: lightgrey;
+}
+
+
+/** FOOTER **/
+
+.attribution {
+    padding-top: 3rem;
+    color: lightgrey;
+    text-align: center;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: rgb(87,70,234);
+}
+
+
+
+
+
+
+
+
